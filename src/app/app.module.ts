@@ -15,7 +15,10 @@ import {MatIconModule} from '@angular/material/icon';
 import { HomeComponent } from './components/views/home/home.component'; 
 import {MatCardModule} from '@angular/material/card';
 import { UsuarioReadComponent } from './components/views/usuario/usuario-read/usuario-read.component'; 
-import {MatTableModule} from '@angular/material/table'; 
+import {MatTableModule} from '@angular/material/table';
+import { CepComponent } from './components/views/cep/cep.component';
+import { BuscarCepComponent } from './components/views/buscar-cep/buscar-cep.component'; 
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,9 @@ import {MatTableModule} from '@angular/material/table';
     FooterComponent,
     NavComponent,
     HomeComponent,
-    UsuarioReadComponent
+    UsuarioReadComponent,
+    CepComponent,
+    BuscarCepComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +41,8 @@ import {MatTableModule} from '@angular/material/table';
     MatIconModule,
     MatCardModule,
     MatTableModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

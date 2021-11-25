@@ -1,0 +1,30 @@
+<form>
+    <div class="formulario">
+        <div>
+            <label>
+                Nome
+            </label>
+            <br>
+            <input type="text" name="nome" />
+        </div>
+
+        <div>
+            <label>
+                SobreNome
+            </label>
+            <br>
+            <input type="text" name="sobrenome" />
+        </div>
+
+        <div>
+            <label>
+                Digite o CEP
+            </label>
+            <br>
+            <input type="text" name="cep" [(ngModel)]="cep"/>
+        </div>
+
+        <app-buscar-cep [cep]="cep"></app-buscar-cep>
+    </div>
+
+</form>

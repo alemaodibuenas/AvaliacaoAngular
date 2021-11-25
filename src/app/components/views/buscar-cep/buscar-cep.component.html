@@ -1,0 +1,12 @@
+<div class="botao">
+    <input type="button" name="btn" value="Buscar CEP" (click)="buscarCep()" />
+    <br>
+    {{dados.logradouro}}
+</div>
+
+<br>
+
+<div>
+    <input type="text" [(ngModel)]="cep" (change)="buscarCep()">
+    {{dados.logradouro}}
+</div>
