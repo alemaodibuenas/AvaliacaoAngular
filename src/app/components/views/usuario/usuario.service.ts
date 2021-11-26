@@ -17,4 +17,10 @@ export class UsuarioService {
     const url = `${this.baseUrl}/usuarios`
     return this.http.get<Usuario[]>(url)
   }
+
+  create(usuario: Usuario): Observable<Usuario>{
+    const url = `${this.baseUrl}/usuarios`
+    return this.http.post<Usuario>(url, usuario);
+  }
+
 }

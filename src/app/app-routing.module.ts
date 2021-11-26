@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CepComponent } from './components/views/cep/cep.component';
 import { HomeComponent } from './components/views/home/home.component';
+import { UsuarioCreateComponent } from './components/views/usuario/usuario-create/usuario-create.component';
 import { UsuarioReadComponent } from './components/views/usuario/usuario-read/usuario-read.component';
 
 const routes: Routes = [
@@ -14,8 +14,8 @@ const routes: Routes = [
   component: UsuarioReadComponent
   },
   {
-  path: 'cep',
-  component: CepComponent
+  path: 'usuario/create',
+  component: UsuarioCreateComponent
   }
 ];
 

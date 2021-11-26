@@ -17,3 +17,16 @@
 .table {
     width: 100%;
 }
+
+.delete {
+    color: red;
+    margin-left: .5rem;
+}
+
+.mat-header {
+    width: 5rem;
+}
+
+.adicionar {
+    margin-bottom: .5rem;
+}

@@ -3,6 +3,8 @@
         <h1>Usuário</h1>
     </div>
 
+    <button class="adicionar mat-elevation-z8" (click)="navegarUsuarioCreate()" mat-stroked-button color="primary"><i class="material-icons">add</i>NOVO USUÁRIO</button>
+
     <div class="mat-elevation-z8 contente-table">
         <table class="table" mat-table [dataSource]="usuarios">
 
@@ -56,8 +58,15 @@
 
             <!-- Symbol Column -->
             <ng-container matColumnDef="acoes">
-                <th mat-header-cell *matHeaderCellDef> Ações </th>
-                <td mat-cell *matCellDef="let row"> </td>
+                <th class="mat-header" mat-header-cell *matHeaderCellDef> Ações </th>
+                <td mat-cell *matCellDef="let row">
+                    <a href="#">
+                        <i class="material-icons">edit</i>
+                    </a>
+                    <a class="delete" href="#">
+                        <i class="material-icons">delete</i>
+                    </a>
+                </td>
             </ng-container>
 
             <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

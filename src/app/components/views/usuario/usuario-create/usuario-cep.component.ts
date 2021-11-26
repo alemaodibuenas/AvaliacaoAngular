@@ -7,7 +7,7 @@ import { BuscarCepService } from './buscar-cep.service';
   templateUrl: './buscar-cep.component.html',
   styleUrls: ['./buscar-cep.component.css']
 })
-export class BuscarCepComponent implements OnInit {
+export class UsuarioCepComponent implements OnInit {
 
   constructor(
     public service: BuscarCepService
