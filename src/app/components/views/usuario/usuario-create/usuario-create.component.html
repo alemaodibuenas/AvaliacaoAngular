@@ -7,7 +7,7 @@
                     Nome
                 </label>
                 <br>
-                <input type="text" name="nome"  />
+                <input type="text" name="nome" [(ngModel)]="nome"/>
             </div>
 
             <div>
@@ -15,7 +15,7 @@
                     Idade
                 </label>
                 <br>
-                <input type="text" />
+                <input type="text" name="idade" [(ngModel)]="idade"/>
             </div>
 
             <div>
@@ -23,48 +23,48 @@
                     Cep
                 </label>
                 <br>
-                <input type="text" >
+                <input type="text" name="cep" [(ngModel)]="cep" (change)="buscarCep()">
             </div>
             <div>
                 <label>
                     Estado
                 </label>
                 <br>
-                <input type="text" >
+                <input type="text" name="estado" [(ngModel)]="dados.uf">
             </div>
             <div>
                 <label>
                     Cidade
                 </label>
                 <br>
-                <input type="text" >
+                <input type="text" name="cidade" [(ngModel)]="dados.localidade">
             </div>
             <div>
                 <label>
                     Logradouro
                 </label>
                 <br>
-                <input type="text" >
+                <input type="text" name="logradouro" [(ngModel)]="dados.logradouro">
             </div>
             <div>
                 <label>
                     Bairro
                 </label>
                 <br>
-                <input type="text" >
+                <input type="text" name="bairro" [(ngModel)]="dados.bairro">
             </div>
             <div>
                 <label>
                     Número
                 </label>
                 <br>
-                <input type="text" >
+                <input type="text" name="numero">
             </div>
+        </div>
 
-            <div>
-                <button (click)="create()" class="buttons mat-elevation-z8" mat-stroked-button color="primary"><i class="material-icons">add</i>NOVO</button>
-                <button class="button mat-elevation-z8" mat-stroked-button color="warn">CANCELAR</button>
-            </div>
+        <div>
+            <button (click)="create()" class="buttons mat-elevation-z8" mat-stroked-button color="primary"><i class="material-icons">add</i>NOVO</button>
+            <button class="button mat-elevation-z8" mat-stroked-button color="warn">CANCELAR</button>
         </div>
     </form>
 </mat-card>

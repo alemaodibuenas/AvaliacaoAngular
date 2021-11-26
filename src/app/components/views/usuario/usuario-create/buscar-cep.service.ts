@@ -10,9 +10,7 @@ import CepDto from "../../../dto/CepDto";
 
 export class BuscarCepService {
 
-    constructor(
-        private http: HttpClient
-    ) { }
+    constructor(private http: HttpClient) { }
 
     buscarCep(cep: string): Observable<CepDto> {
 
