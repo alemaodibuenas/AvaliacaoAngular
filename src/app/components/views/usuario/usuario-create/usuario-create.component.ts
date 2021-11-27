@@ -36,9 +36,17 @@ export class UsuarioCreateComponent implements OnInit {
   }
 
   create(): void {
+
+    this.usuario.nome = this.nome;
+    this.usuario.idade = this.idade;
+    this.usuario.cep = this.cep;
+    this.usuario.estado= this.dados.uf;
+    this.usuario.cidade= this.dados.localidade;
+    this.usuario.logradouro= this.dados.logradouro;
+    this.usuario.bairro= this.dados.bairro;
+    this.usuario.numero= this.numero;
+
     this.service.create(this.usuario).subscribe((resposta) => {
-      this.usuario.nome = this.nome;
-      this.usuario.estado = this.dados.logradouro;
       console.log(resposta);
     })
   }
