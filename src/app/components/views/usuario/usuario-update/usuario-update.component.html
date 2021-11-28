@@ -1,0 +1,70 @@
+<mat-card class="criarUsuario mat-elevation-z4">
+    <form>
+        <h1>UPDATE USUÁRIO</h1>
+        <div class="formulario">
+            <div>
+                <label>
+                    Nome
+                </label>
+                <br>
+                <input [(ngModel)]="usuario.nome" type="text" name="nome" />
+            </div>
+
+            <div>
+                <label>
+                    Idade
+                </label>
+                <br>
+                <input [(ngModel)]="usuario.idade" type="text" name="idade" />
+            </div>
+
+            <div>
+                <label>
+                    Cep
+                </label>
+                <br>
+                <input [(ngModel)]="usuario.cep" type="text" name="cep" />
+            </div>
+            <div>
+                <label>
+                    Estado
+                </label>
+                <br>
+                <input [(ngModel)]="usuario.estado" type="text" name="estado" />
+            </div>
+            <div>
+                <label>
+                    Cidade
+                </label>
+                <br>
+                <input [(ngModel)]="usuario.cidade" type="text" name="cidade" />
+            </div>
+            <div>
+                <label>
+                    Logradouro
+                </label>
+                <br>
+                <input [(ngModel)]="usuario.logradouro" type="text" name="logradouro" />
+            </div>
+            <div>
+                <label>
+                    Bairro
+                </label>
+                <br>
+                <input [(ngModel)]="usuario.bairro" type="text" name="bairro" />
+            </div>
+            <div>
+                <label>
+                    Número
+                </label>
+                <br>
+                <input [(ngModel)]="usuario.numero" type="text" name="numero" />
+            </div>
+        </div>
+
+        <div>
+            <button (click)="update()" class="buttons mat-elevation-z8" mat-stroked-button color="primary"><i class="material-icons">update</i>UPDATE</button>
+            <button (click)="cancel()" class="button mat-elevation-z8" mat-stroked-button color="warn">CANCELAR</button>
+        </div>
+    </form>
+</mat-card>

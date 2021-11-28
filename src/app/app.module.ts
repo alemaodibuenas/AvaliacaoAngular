@@ -20,7 +20,8 @@ import { FormsModule } from '@angular/forms';
 import { UsuarioCreateComponent } from './components/views/usuario/usuario-create/usuario-create.component';
 import {MatButtonModule} from '@angular/material/button'; 
 import {MatSnackBarModule} from '@angular/material/snack-bar';
-import { UsuarioDeleteComponent } from './components/views/usuario/usuario-delete/usuario-delete.component'; 
+import { UsuarioDeleteComponent } from './components/views/usuario/usuario-delete/usuario-delete.component';
+import { UsuarioUpdateComponent } from './components/views/usuario/usuario-update/usuario-update.component'; 
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { UsuarioDeleteComponent } from './components/views/usuario/usuario-delet
     HomeComponent,
     UsuarioReadComponent,
     UsuarioCreateComponent,
-    UsuarioDeleteComponent
+    UsuarioDeleteComponent,
+    UsuarioUpdateComponent
   ],
   imports: [
     BrowserModule,

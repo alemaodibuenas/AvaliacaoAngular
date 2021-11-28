@@ -34,6 +34,11 @@ export class UsuarioService {
     return this.http.delete<void>(url)
   }
 
+  update(usuario: Usuario): Observable<void> {
+    const url = `${this.baseUrl}/usuarios/${usuario.id}`
+    return this.http.put<void>(url, usuario)
+  }
+
   mensagem(str: String): void {
     this._snack.open(`${str}`, `OK`, {
       horizontalPosition: 'end',
