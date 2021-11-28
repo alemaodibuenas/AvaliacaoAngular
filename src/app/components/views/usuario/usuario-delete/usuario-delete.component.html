@@ -1,13 +1,13 @@
 <mat-card class="criarUsuario mat-elevation-z4">
     <form>
-        <h1>CRIANDO NOVO USUÁRIO</h1>
+        <h1>DELETANDO USUÁRIO</h1>
         <div class="formulario">
             <div>
                 <label>
                     Nome
                 </label>
                 <br>
-                <input type="text" name="nome" [(ngModel)]="nome"/>
+                <input [(ngModel)]="usuario.nome" type="text" name="nome" disabled/>
             </div>
 
             <div>
@@ -15,7 +15,7 @@
                     Idade
                 </label>
                 <br>
-                <input type="text" name="idade" [(ngModel)]="idade"/>
+                <input [(ngModel)]="usuario.idade" type="text" name="idade" disabled/>
             </div>
 
             <div>
@@ -23,48 +23,48 @@
                     Cep
                 </label>
                 <br>
-                <input type="text" name="cep" [(ngModel)]="cep" (change)="buscarCep()">
+                <input [(ngModel)]="usuario.cep" type="text" name="cep" disabled/>
             </div>
             <div>
                 <label>
                     Estado
                 </label>
                 <br>
-                <input type="text" name="estado" [(ngModel)]="dados.uf">
+                <input [(ngModel)]="usuario.estado" type="text" name="estado" disabled/>
             </div>
             <div>
                 <label>
                     Cidade
                 </label>
                 <br>
-                <input type="text" name="cidade" [(ngModel)]="dados.localidade">
+                <input [(ngModel)]="usuario.cidade" type="text" name="cidade" disabled/>
             </div>
             <div>
                 <label>
                     Logradouro
                 </label>
                 <br>
-                <input type="text" name="logradouro" [(ngModel)]="dados.logradouro">
+                <input [(ngModel)]="usuario.logradouro" type="text" name="logradouro" disabled/>
             </div>
             <div>
                 <label>
                     Bairro
                 </label>
                 <br>
-                <input type="text" name="bairro" [(ngModel)]="dados.bairro">
+                <input [(ngModel)]="usuario.bairro" type="text" name="bairro" disabled/>
             </div>
             <div>
                 <label>
                     Número
                 </label>
                 <br>
-                <input type="text" name="numero" [(ngModel)]="numero">
+                <input [(ngModel)]="usuario.numero" type="text" name="numero" disabled/>
             </div>
         </div>
 
         <div>
-            <button (click)="create()" class="buttons mat-elevation-z8" mat-stroked-button color="primary"><i class="material-icons">add</i>NOVO</button>
-            <button (click)="cancelar()" class="button mat-elevation-z8" mat-stroked-button color="warn">CANCELAR</button>
+            <button (click)="delete()" class="buttons mat-elevation-z8" mat-stroked-button color="primary"><i class="material-icons">delete</i>DELETAR</button>
+            <button (click)="cancel()" class="button mat-elevation-z8" mat-stroked-button color="warn">CANCELAR</button>
         </div>
     </form>
 </mat-card>

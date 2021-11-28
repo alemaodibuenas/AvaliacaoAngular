@@ -28,7 +28,7 @@ export class UsuarioReadComponent implements OnInit {
   }
 
   navegarUsuarioCreate() {
-    this.router.navigate(["usuario/create"])
+    this.router.navigate(["usuarios/create"])
   }
 
 }

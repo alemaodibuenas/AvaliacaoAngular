@@ -19,6 +19,8 @@ import {MatTableModule} from '@angular/material/table';
 import { FormsModule } from '@angular/forms';
 import { UsuarioCreateComponent } from './components/views/usuario/usuario-create/usuario-create.component';
 import {MatButtonModule} from '@angular/material/button'; 
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { UsuarioDeleteComponent } from './components/views/usuario/usuario-delete/usuario-delete.component'; 
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import {MatButtonModule} from '@angular/material/button';
     NavComponent,
     HomeComponent,
     UsuarioReadComponent,
-    UsuarioCreateComponent
+    UsuarioCreateComponent,
+    UsuarioDeleteComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,8 @@ import {MatButtonModule} from '@angular/material/button';
     MatTableModule,
     HttpClientModule,
     FormsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
