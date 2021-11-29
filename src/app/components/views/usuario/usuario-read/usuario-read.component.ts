@@ -20,6 +20,11 @@ export class UsuarioReadComponent implements OnInit {
     this.findAll();
   }
 
+  abrirProcesso(row: Usuario):void{
+
+    console.log(row);
+  }
+
   findAll(){
     this.service.findAll().subscribe(resposta => {
       console.log(resposta);

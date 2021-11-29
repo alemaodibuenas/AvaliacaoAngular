@@ -35,7 +35,7 @@ export class UsuarioService {
   }
 
   update(usuario: Usuario): Observable<void> {
-    const url = `${this.baseUrl}/usuarios/${usuario.id}`
+    const url = `${this.baseUrl}/usuarios`
     return this.http.put<void>(url, usuario)
   }
 
