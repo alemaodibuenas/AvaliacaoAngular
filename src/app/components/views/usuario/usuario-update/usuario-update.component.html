@@ -23,7 +23,7 @@
                     Cep
                 </label>
                 <br>
-                <input [(ngModel)]="usuario.cep" type="text" name="cep" />
+                <input [(ngModel)]="cep" [(ngModel)]="usuario.cep" type="text" name="cep" (change)="buscarCep()"/>
             </div>
             <div>
                 <label>
