@@ -21,7 +21,9 @@ import { UsuarioCreateComponent } from './components/views/usuario/usuario-creat
 import {MatButtonModule} from '@angular/material/button'; 
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { UsuarioDeleteComponent } from './components/views/usuario/usuario-delete/usuario-delete.component';
-import { UsuarioUpdateComponent } from './components/views/usuario/usuario-update/usuario-update.component'; 
+import { UsuarioUpdateComponent } from './components/views/usuario/usuario-update/usuario-update.component';
+import { LoginComponent } from './components/views/login/login.component'; 
+import { AuthService } from './components/views/login/auth.service';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { UsuarioUpdateComponent } from './components/views/usuario/usuario-updat
     UsuarioReadComponent,
     UsuarioCreateComponent,
     UsuarioDeleteComponent,
-    UsuarioUpdateComponent
+    UsuarioUpdateComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +53,7 @@ import { UsuarioUpdateComponent } from './components/views/usuario/usuario-updat
     MatButtonModule,
     MatSnackBarModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
