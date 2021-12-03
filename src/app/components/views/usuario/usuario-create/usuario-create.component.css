@@ -1,22 +1,17 @@
-.formulario {
-    margin-left: 2rem;
-    margin-top: 0;
-}
-
 .criarUsuario {
-    margin-left: 1rem;
-    margin-top: 1rem;
-    width: 20%;
+    width: 200px;
+    margin-left: 3rem;
+    margin-top: 3rem;
 }
 
-.botao {
-    margin-top: .2rem;
+.btn {
+    display: table-cell;
+    margin-top: .5rem;
+    width: 148px; 
 }
 
-.buttons {
-    margin-top: .2rem;
-}
-
-.button {
-    margin-left: 1rem;
+.btn1 {
+    display: table-cell;
+    margin-top: .5rem;
+    width: 148px; 
 }

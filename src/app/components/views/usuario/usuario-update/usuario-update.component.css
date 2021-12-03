@@ -1,0 +1,17 @@
+.update {
+    width: 200px;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+.btn {
+    display: table-cell;
+    margin-top: .5rem;
+    width: 148px; 
+}
+
+.btn1 {
+    display: table-cell;
+    margin-top: .5rem;
+    width: 148px; 
+}

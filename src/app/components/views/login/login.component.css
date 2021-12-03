@@ -1,0 +1,20 @@
+.card {
+    max-width: 330px;
+    margin: auto;  
+    margin-top: 5rem;  
+  }
+
+.row {
+    margin-bottom: .5rem;
+    margin-left: 5rem;
+}
+
+.btn {
+    display: table-cell;
+    margin-left: 5rem;
+    width: 148px;    
+}
+
+h2 {
+    margin-left: 9rem;
+}
